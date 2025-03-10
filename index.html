@@ -3,133 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chúc Mừng 8/3 - Nâng Cao</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background: linear-gradient(135deg, #ffe6f2, #fff0f5, #e6f3ff);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: 'Arial', sans-serif;
-            overflow: hidden;
-        }
-        .card {
-            background: rgba(255, 255, 255, 0.9);
-            border-radius: 25px;
-            box-shadow: 0 10px 30px rgba(255, 105, 180, 0.4);
-            padding: 40px;
-            max-width: 550px;
-            text-align: center;
-            position: relative;
-            animation: float 3s ease-in-out infinite;
-        }
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
-        h1 {
-            color: #ff69b4;
-            font-size: 2.8rem;
-            margin-bottom: 20px;
-            animation: textGlow 2s ease-in-out infinite;
-        }
-        @keyframes textGlow {
-            0%, 100% { text-shadow: 0 0 5px #ff69b4; }
-            50% { text-shadow: 0 0 20px #ff1493; }
-        }
-        p {
-            color: #444;
-            font-size: 1.3rem;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-        .flower {
-            width: 120px;
-            margin: 20px auto;
-            animation: spin 6s linear infinite;
-        }
-        @keyframes spin {
-            100% { transform: rotate(360deg); }
-        }
-        .btn-custom {
-            background: linear-gradient(45deg, #ff69b4, #ff1493);
-            border: none;
-            padding: 12px 30px;
-            color: white;
-            font-size: 1.1rem;
-            border-radius: 25px;
-            transition: all 0.3s;
-        }
-        .btn-custom:hover {
-            transform: scale(1.1) rotate(5deg);
-            box-shadow: 0 5px 15px rgba(255, 20, 147, 0.6);
-        }
-        .modal-content {
-            background: #fff0f5;
-            border-radius: 15px;
-            border: none;
-        }
-        .modal-header {
-            border-bottom: none;
-            color: #ff69b4;
-        }
-        .confetti {
-            position: absolute;
-            width: 10px;
-            height: 10px;
-            background: #ff69b4;
-            border-radius: 50%;
-            animation: fall 5s linear infinite;
-        }
-        @keyframes fall {
-            0% { transform: translateY(-100vh) rotate(0deg); opacity: 1; }
-            100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
-        }
-    </style>
+    <title>Trần Bá Hoàng Duy - Software Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!-- Card chính -->
-    <div class="card">
-        <h1>Chúc Mừng 8/3</h1>
-        <img src="https://img.icons8.com/color/120/000000/rose.png" alt="Hoa hồng" class="flower">
-        <p>Chúc các bạn nữ ngày 8/3 thật rực rỡ, hạnh phúc và luôn xinh đẹp như những bông hoa! 
-           Hãy tận hưởng ngày đặc biệt này nhé!</p>
-        <button class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#greetingModal">Gửi Lời Chúc</button>
-    </div>
+    <header>
+        <div class="profile-container">
+            <img src="\Image\duy.jpg" alt="Ảnh cá nhân" class="profile-image">
+            <h1>Trần Bá Hoàng Duy</h1>
+            <p class="subtitle">Software Developer</p>
+        </div>
+    </header>
 
-    <!-- Modal Popup -->
-    <div class="modal fade" id="greetingModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Lời Chúc Đặc Biệt</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <nav>
+        <ul>
+            <li><a href="#about"><i class="fas fa-user"></i> About Me</a></li>
+            <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+            <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I'm a passionate software developer with a strong commitment to creating innovative and efficient solutions. My expertise spans frontend and backend technologies and I'm dedicated to continuous learning and professional growth. I thrive on challenges that push me to expand my technical skills and deliver high-quality, impactful projects.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li><i class="fab fa-html5"></i> HTML5</li>
+                        <li><i class="fab fa-css3-alt"></i> CSS3</li>
+                        <li><i class="fab fa-js"></i> JavaScript</li>
+                        <li><i class="fab fa-react"></i> React</li>
+                    </ul>
                 </div>
-                <div class="modal-body">
-                    <p>Chúc bạn một ngày 8/3 tràn đầy yêu thương, niềm vui và những điều bất ngờ tuyệt vời!</p>
-                    <img src="https://img.icons8.com/emoji/50/000000/sparkling-heart.png" alt="Trái tim">
+                <div class="skill">
+                    <h3>Backend</h3>
+                    <ul>
+                        <li><i class="fas fa-code"></i> C, C++, C#</li>
+                        <li><i class="fab fa-java"></i> Java</li>
+                    </ul>
+                </div>
+                <div class="skill">
+                    <h3>Database</h3>
+                    <ul>
+                        <li><i class="fas fa-database"></i> MySQL</li>
+                        <li><i class="fas fa-server"></i> SQLServer</li>
+                        <li><i class="fas fa-leaf"></i> MongoDB</li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <!-- Confetti effect -->
-    <script>
-        function createConfetti() {
-            const confetti = document.createElement('div');
-            confetti.className = 'confetti';
-            confetti.style.left = Math.random() * 100 + 'vw';
-            confetti.style.background = `hsl(${Math.random() * 360}, 100%, 50%)`;
-            document.body.appendChild(confetti);
-            setTimeout(() => confetti.remove(), 5000);
-        }
-        setInterval(createConfetti, 200);
-    </script>
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            <div class="projects-container">
+                <div class="project">
+                    <h3>Web CoffeShop</h3>
+                    <p>A comprehensive cafe management web application built using Vue and Vuex. Features include homepage, shopping cart, checkout, and order management systems.</p>
+                    <a href="https://github.com/OhuKyu/CoffeShop" class="project-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+                <div class="project">
+                    <h3>FoodProject</h3>
+                    <p>An Android food ordering application with user-friendly interfaces for browsing, cart management, order history, and basic user authentication.</p>
+                    <a href="https://github.com/OhuKyu/FoodProject" class="project-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+                <div class="project">
+                    <h3>CoffeShop Management</h3>
+                    <p>A robust C# and MySQL-based coffee shop management system with role-based access for Admin and Cashier, featuring comprehensive employee and order management.</p>
+                    <a href="https://github.com/OhuKyu/CafeManagementSystem" class="project-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <div class="contact-links">
+                <a href="https://www.linkedin.com/in/duy-tran-0610a72bb" class="contact-icon" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100068765306240&mibextid=ZbWKwL" class="contact-icon" target="_blank">
+                    <i class="fab fa-facebook"></i> Facebook
+                </a>
+                <a href="https://github.com/OhuKyu" class="contact-icon" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="mailto:hoangduy51232@gmail.com" class="contact-icon">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+            </div>
+            <a href="Image\CV_TranBaHoangDuy.pdf" class="download-cv" download>
+                <i class="fas fa-download"></i> Download CV
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Trần Bá Hoàng Duy. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
